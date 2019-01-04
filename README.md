@@ -6,20 +6,25 @@
 First make sure you have Node installed.
 
 On Mac OS X, it's recommended to use [Homebrew](http://brew.sh/) to install Node + [npm](https://www.npmjs.com):
-
+    ```
     brew install node
-
+    ```
 To install the Node dependencies:
-
+    ```
     npm install
-
+    ```
+ After this make sure you have a local server running to serve the content. You can install one by running 
+    ```
+    npm install -g live-server
+    ```
+    and run live-server from the comand line to start the server
 
 ### Local Development
 
 To serve the site from a simple Node development server:
-
+    ```
     npm start
-
+    ```
 Then launch the site from your favourite browser:
 
 [__http://localhost:3000/__](http://localhost:3000/)
