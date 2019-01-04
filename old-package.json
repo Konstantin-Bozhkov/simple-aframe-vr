@@ -1,0 +1,34 @@
+{
+  "name": "simple-aframe-vr",
+  "version": "1.0.0",
+  "description": "Simpe VR application using AFrame",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo --live --verbose --port 3000 --open",
+    "deploy": "ghpages",
+    "ghpages": "ghpages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konstantin-Bozhkov/simple-aframe-vr.git"
+  },
+  "keywords": [
+    "vr",
+    "aframe",
+    "javascript"
+  ],
+  "author": "Konstantin Bozhkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Konstantin-Bozhkov/simple-aframe-vr/issues"
+  },
+  "homepage": "https://github.com/Konstantin-Bozhkov/simple-aframe-vr#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "budo": "^7.0.0",
+    "ghpages": "0.0.3"
+  },
+}

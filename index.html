@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+            <img id="skyTexture" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+            <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        </a-assets>
+        <a-box src="#boxTexture" color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2">
+            <a-sphere src="#boxTexture" position="0 2 -5" color="yellow">
+                <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="600" repeat="indefinite"></a-animation>
+            </a-sphere>
+            
+            <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+        </a-box>
+        <a-sky src="#skyTexture" color="#1589FF"></a-sky>
+        <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
+
+        <a-light type="ambient" color="#445451"></a-light>
+        <a-light type="point" intensity="3" position="2 4 4"></a-light>
+
+    </a-scene>
+  </body>
+</html>
+
